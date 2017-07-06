@@ -88,7 +88,7 @@ TravisCI should spool up and your release tag/package should be generated accord
   Things that can go wrong:
   - you forgot to install TravisCI CLI and login
   - you forget to use ```$ npm run commit``` to format your commit messages (could also use a git hook), meaning a release won't happen
-  - you have the wrong git repository referenenced in your package.json
+  - you have the wrong git repository referenced in your package.json
   - you accidentally indicated this was a private GitHub repo, but it's not
   - the ```$ npm run setup``` script fails to help setup a GitHub personal token
   - the ```$ npm run setup``` script fails to setup the GitHub and NPM tokens inside Travis, forcing you to manually print them
