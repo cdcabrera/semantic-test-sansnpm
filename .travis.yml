@@ -9,7 +9,8 @@ node_js:
 before_script:
   - npm prune
 after_success:
-  - git fetch --tags; npm run semantic-release
+  - git fetch --tags; if [[ $(git tag) ]]; then echo \"success\"; else git tag v0.0.0; fi;
+  - npm run semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
