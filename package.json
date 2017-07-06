@@ -17,7 +17,7 @@
     "setup": "echo \"This installs and runs the semantic-release-cli globally.\"; semantic-release-cli setup",
     "commit": "git add .; git-cz",
     "git-tag": "git fetch --tags; if [[ $(git tag) ]]; then echo \"success\"; else git tag v0.0.0; git push --tags; fi; git tag",
-    "semantic-release": "git fetch --tags; semantic-release pre && semantic-release post"
+    "semantic-release": "semantic-release pre && semantic-release post"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
